@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-    body {
+    body 
+    {
         font-family: Century Gothic;
         font-display: swap;
         margin: 0px;
@@ -73,17 +74,41 @@
     }
     .section2
     {
-        height: 1000px;
+        height: 800px;
         font-size: 20px;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('biography-bg.png');
-        padding-top: 300px;
-        padding-left: 80px;
+        padding-top: 250px;
     }
     .orange-highligh
     {
         color: orange;
+    }
+    .half-width-experience
+    {
+        width: 40%;
+        background-repeat: no-repeat;
+        padding-top: 25px;
+        background-position: right;
+        padding-left: 40px;
+        box-shadow: 10px 10px 40px gray;
+        float: left;
+        margin-left: 80px;
+        height: 400px;
+        border-radius: 5px;
+    }
+    #full-stack
+    {
+        border-left: 7px solid;
+        border-image: linear-gradient(180deg, lightsalmon, tomato);
+        border-image-slice: 1;
+    }
+    #baby
+    {
+        border-left: 7px solid;
+        border-image: linear-gradient(180deg, blue, cyan);
+        border-image-slice: 1;
     }
     </style>
 </head>
@@ -118,17 +143,19 @@
             </div>
         </div>
     </section>
-    <section class="section2">
-        <h1 style="font-size: 50px;">Experiences</h1>
-        <div class="half-width">
+    <section class="section2" style="background-image: url('exp-bg.png');
+                                     background-size: 100px;
+                                     background-position: left;">
+        <h1 style="font-size: 50px; text-align: center;">Experiences</h1>
+        <div id="full-stack" class="half-width-experience">
             <h1>Full Stack Web Developer</h1>
             <h3><span class="orange-highligh">2021-Present | Pro Level Developer</span></h3>
             <p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
         </div>
-        <div class="half-width">
+        <div id="baby" class="half-width-experience">
             <h1>Baby Web Developer</h1>
-            <h3><span class="orange-highligh">2020-2021 | Pro Level Developer</span></h3>
-            <p>They didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.</p>
+            <h3><span class="orange-highligh">2020-2021 | Programming Hero Learner</span></h3>
+            <p>They didn't offer me a job. But I made myself as a remote web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.</p>
         </div>
     </section>
 </body>
